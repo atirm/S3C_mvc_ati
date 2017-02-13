@@ -6,13 +6,11 @@ using System.Web.Mvc;
 
 namespace S3C_MVC.Controllers
 {
-    public class homeController : Controller
+    public class checkoutController : Controller
     {
-        // GET: home
+        // GET: checkout
         public ActionResult Index()
         {
-
-            ViewBag.Title = "صفحه اصلی";
             return View();
         }
     }
