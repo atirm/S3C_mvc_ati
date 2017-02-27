@@ -1,4 +1,5 @@
-﻿using System;
+﻿using S3C_MVC.DataLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,7 +14,11 @@ namespace S3C_MVC.Controllers
         {
 
             ViewBag.Title = "صفحه اصلی";
-            return View();
+
+            var db = new EntityContext();
+
+        var result= db.Products.ToList();
+            return View(result);
         }
     }
 }

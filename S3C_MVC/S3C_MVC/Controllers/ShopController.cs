@@ -11,6 +11,8 @@ namespace S3C_MVC.Controllers
         // GET: Shop
         public ActionResult Index()
         {
+
+            ViewBag.Title = "صفحه محصولات";
             return View();
         }
     }

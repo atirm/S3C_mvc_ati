@@ -10,7 +10,7 @@ namespace S3C_MVC.Controllers
     public class BlogController : Controller
     {
         // GET: Blog
-        public ActionResult Index()
+        public ViewResult Index()
         {
            ViewBag.Title = "صفحه اخبار";
             var blogsetting = new BlogSetting();
